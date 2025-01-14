@@ -1,0 +1,321 @@
+<html <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Urban Watches | Home </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="js/javascript.js"></script>
+        
+    </head>
+<!--Making Header Transparent-->
+    <style>
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 1rem 0;
+    position: fixed; /* Keeps the header at the top on scroll */
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur effect behind the bar */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Optional: Adds a subtle border */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Center the nav links horizontally */
+    align-items: center; /* Center the logo and nav vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 100px; /* Adjust logo size */
+    margin-right: 2rem;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Space between nav links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f4a261; /* Highlight color on hover */
+}
+
+    </style> 
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="logo"><img src="images/urban soles. (6).png" alt=""></h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <!-- Video Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <video autoplay loop muted playsinline class="promo-video">
+                    <source src="images/y2mate.com - OOZOO WATCH COMMERCIAL  PRODUCT VIDEOGRAPHY_1080.mp4"video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+               
+            </div>
+            <!--Using of Inline CSS to style ShopNow Button.-->
+        </section>
+        <section id="buynow" style="display: flex; justify-content: center; align-items: center; padding: 2rem 0; background-color: white; color: #fff;">
+            <a href="#products" style="background: #f4a261; color: #fff; padding: 1rem 2rem; font-size: 1.2rem; font-weight: bold; text-transform: uppercase; text-decoration: none; border-radius: 8px; transition: all 0.3s ease; display: inline-block;" 
+               onmouseover="this.style.background='#e76f51'; this.style.transform='scale(1.05)';" 
+               onmouseout="this.style.background='#f4a261'; this.style.transform='scale(1)';">
+                Shop Now
+            </a>
+        </section>
+        
+
+        <!-- Featured Products Section -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/617PuITXFNL._SS1000_.jpg" alt="Luxury Watch">
+                <h3>Fossil Men Stainless Steel Nate Chronograph Black Dial Watch-Jr1401I</h3>
+                <p>Rs.25,500<span class="discount">Rs.50,000</span></p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product">
+                <img src="images/c12dc942-9c96-4a4f-9c2f-6ddfce1d82b11622187540841-1.jpg" alt="Casual Watch">
+                <h3>Tissot Men Black Analogue Watch - T1256173305100</h3>
+                <p>Rs.30,599 <span class="discount">Rs.42,000</span></p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product">
+                <img src="images/517AIIesGqL._SS400_.jpg" alt="Casual Watch">
+                <h3>Titan Regalia Maritime Anthracite NS1873KM01</h3>
+                <p>Rs.35,599 <span class="discount">Rs.40,000</span></p>
+                <button>BUY NOW</button>    
+            </div>
+            <div class="product">
+                <img src="images/71-xPhJRhHL._SS400_.jpg" alt="Casual Watch">
+                <h3>TIMEX Men Multifunction Black Round Dial Watch - TWEG18902</h3>
+                <p>Rs.15,599 <span class="discount">Rs.30,000</span></p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product">
+                <img src="images/81ejTVT9HbL._SS400_.jpg" alt="Casual Watch">
+                <h3>Casio G-Shock Digital Black Dial Men's Watch - G760</h3>
+                <p>Rs.15,599 <span class="discount">Rs.30,000</span></p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product">
+                <img src="images/71RglOBXeBL._SS400_.jpg" alt="Casual Watch">
+                <h3>Casio G-Shock Digital Military Edition.</h3>
+                <p>Rs.15,599 <span class="discount">Rs.30,000</span></p>
+                <button>BUY NOW</button>
+            </div>
+        <!-- Home Page Blog Section -->
+<section id="blog-section" class="blog-section">
+  <div class="container">
+    <h2 class="section-title">Latest Blog Posts</h2>
+    <p class="section-description">Discover watch fashion tips, product reviews, and much more in our blog.</p>
+
+    <!-- Blog Cards -->
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="images/images (2).jpeg" alt="Blog Post 1" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">The Ultimate Gift Guide: Watches for Him and Her</h3>
+          <p class="blog-description">
+            Watches are not just about telling time; they are an expression of your personality...
+          </p>
+          <a href="blog1.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/images3.jpeg" alt="Blog Post 2" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">Choosing the Perfect Watch for Any Occasion</h3>
+          <p class="blog-description">
+            From casual to formal events, the right watch can elevate your entire outfit...
+          </p>
+          <a href="blog2.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/Rado-DiaStar-Original-Skeleton-R12162153-LS.jpg" alt="Blog Post 3" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">Sustainability in Watchmaking: Urban Watches’ Green Initiative</h3>
+          <p class="blog-description">
+            Proper care can make your watch last a lifetime. Here are the top tips for maintenance...
+          </p>
+          <a href="blog3.html" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="blog.html" class="cta-button">Explore More Blog Posts</a>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Additional CSS for Styling Blog Page -->
+  <style>
+/* Blog Section Styling */
+/* Blog Section Styling */
+.blog-section {
+  padding: 80px 20px; /* Adjust padding for top and bottom space */
+  background-color: #f9f9f9;
+  text-align: center; /* Center-align all content inside the section */
+  position: relative; /* Ensures child elements respect the section boundaries */
+}
+
+/* Blog Section Title */
+.section-title {
+  font-size: 2.5rem; /* Adjust font size for visibility */
+  color: #333; /* Darker color for better contrast */
+  margin-bottom: 20px; /* Add spacing below the title */
+  font-weight: bold;
+  position: relative; /* Default positioning */
+  z-index: 1; /* Ensures the title is above other elements */
+}
+
+/* Section Description */
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px; /* Space below description */
+}
+
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Blog Cards */
+.blog-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Images */
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Blog Content */
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Read More Link */
+.read-more {
+  font-size: 1rem;
+  color: #4CAF50;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #4CAF50;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* Call-to-Action Button */
+.cta {
+  margin-top: 40px;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+  </style>
+  
+
+  
+  
+            
+
+    
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Urban Watches. All rights reserved.</p>
+    </footer>
+      
+        
+    </body>
+</html>
