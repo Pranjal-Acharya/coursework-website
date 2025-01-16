@@ -138,172 +138,285 @@ nav {
                 <button>BUY NOW</button>
             </div>
         <!-- Home Page Blog Section -->
-<section id="blog-section" class="blog-section">
-  <div class="container">
-    <h2 class="section-title">Latest Blog Posts</h2>
-    <p class="section-description">Discover watch fashion tips, product reviews, and much more in our blog.</p>
-
-    <!-- Blog Cards -->
-    <div class="blog-grid">
-      <div class="blog-card">
-        <img src="images/images (2).jpeg" alt="Blog Post 1" class="blog-image">
-        <div class="blog-content">
-          <h3 class="blog-title">The Ultimate Gift Guide: Watches for Him and Her</h3>
-          <p class="blog-description">
-            Watches are not just about telling time; they are an expression of your personality...
-          </p>
-          <a href="blog1.html" class="read-more">Read More</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="images/images3.jpeg" alt="Blog Post 2" class="blog-image">
-        <div class="blog-content">
-          <h3 class="blog-title">Choosing the Perfect Watch for Any Occasion</h3>
-          <p class="blog-description">
-            From casual to formal events, the right watch can elevate your entire outfit...
-          </p>
-          <a href="blog2.html" class="read-more">Read More</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <img src="images/Rado-DiaStar-Original-Skeleton-R12162153-LS.jpg" alt="Blog Post 3" class="blog-image">
-        <div class="blog-content">
-          <h3 class="blog-title">Sustainability in Watchmaking: Urban Watches’ Green Initiative</h3>
-          <p class="blog-description">
-            Proper care can make your watch last a lifetime. Here are the top tips for maintenance...
-          </p>
-          <a href="blog3.html" class="read-more">Read More</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta">
-      <a href="blog.html" class="cta-button">Explore More</a>
-    </div>
-  </div>
-</section>
+        <section id="blog-section" class="blog-section">
+          <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <p class="section-description">Discover watch fashion tips, product reviews, and much more in our blog.</p>
+        
+            <!-- Blog Cards -->
+            <div class="blog-grid">
+              <!-- Blog Card 1 -->
+              <div class="blog-card">
+                <div class="blog-image-wrapper">
+                  <img src="images/images (2).jpeg" alt="Blog Post 1" class="blog-image">
+                </div>
+                <h3 class="blog-title">The Ultimate Gift Guide: Watches for Him and Her</h3>
+                <p class="blog-description">
+                  Watches are not just about telling time; they are an expression of your personality...
+                </p>
+                <div class="blog-action">
+                  <a href="blog1.html" class="read-more">Read More</a>
+                </div>
+              </div>
+        
+              <!-- Blog Card 2 -->
+              <div class="blog-card">
+                <div class="blog-image-wrapper">
+                  <img src="images/images3.jpeg" alt="Blog Post 2" class="blog-image">
+                </div>
+                <h3 class="blog-title">Choosing the Perfect Watch for Any Occasion</h3>
+                <p class="blog-description">
+                  From casual to formal events, the right watch can elevate your entire outfit...
+                </p>
+                <div class="blog-action">
+                  <a href="blog2.html" class="read-more">Read More</a>
+                </div>
+              </div>
+        
+              <!-- Blog Card 3 -->
+              <div class="blog-card">
+                <div class="blog-image-wrapper">
+                  <img src="images/Rado-DiaStar-Original-Skeleton-R12162153-LS.jpg" alt="Blog Post 3" class="blog-image">
+                </div>
+                <h3 class="blog-title">Sustainability in Watchmaking: Urban Watches' Green Initiative</h3>
+                <p class="blog-description">
+                  Proper care can make your watch last a lifetime. Here are the top tips for maintenance...
+                </p>
+                <div class="blog-action">
+                  <a href="blog3.html" class="read-more">Read More</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="cta">
+              <a href="blog.html" class="cta-button">Explore More</a>
+            </div>
+          </div>
+        </section>
 
   
   <!-- Additional CSS for Styling Blog Page -->
   <style>
-/* Blog Section Styling */
-/* Blog Section Styling */
+/* Section Containers */
 .blog-section {
-  padding: 80px 20px; /* Adjust padding for top and bottom space */
-  background-color: #f9f9f9;
-  text-align: center; /* Center-align all content inside the section */
-  position: relative; /* Ensures child elements respect the section boundaries */
+  padding: 40px 0;
+  background-color: #f8f9fa;
 }
 
-/* Blog Section Title */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Headers */
 .section-title {
-  font-size: 2.5rem; /* Adjust font size for visibility */
-  color: #333; /* Darker color for better contrast */
-  margin-bottom: 20px; /* Add spacing below the title */
-  font-weight: bold;
-  position: relative; /* Default positioning */
-  z-index: 1; /* Ensures the title is above other elements */
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
-/* Section Description */
 .section-description {
-  font-size: 1.1rem;
+  font-size: 16px;
   color: #666;
-  margin-bottom: 40px; /* Space below description */
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-/* Blog Grid */
+/* Blog Grid Layout */
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+  padding: 0 15px; /* Added padding for better spacing on smaller screens */
 }
 
-/* Blog Cards */
+/* Blog Card Styling */
 .blog-card {
-  background-color: #fff;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures vertical alignment */
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 400px;
+  cursor: pointer;
+  will-change: transform; /* Improve hover transition */
 }
 
 .blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Blog Images */
 .blog-image {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+ 
 }
 
 /* Blog Content */
-.blog-content {
-  padding: 20px;
-  text-align: left;
-}
-
 .blog-title {
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-weight: 600;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  min-height: 50px;
 }
 
 .blog-description {
-  font-size: 1rem;
-  color: #555;
+  font-size: 14px;
+  color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 65px;
+  flex-grow: 1;
 }
 
-/* Read More Link */
+/* Action Buttons */
 .read-more {
-  font-size: 1rem;
-  color: #4CAF50;
-  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffffff;
   text-decoration: none;
-  border: 1px solid #4CAF50;
-  padding: 8px 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: auto;
 }
 
 .read-more:hover {
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #444;
 }
 
-/* Call-to-Action Button */
+/* CTA Section */
 .cta {
-  margin-top: 40px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .cta-button {
-  font-size: 1.2rem;
+  display: inline-block;
   padding: 12px 30px;
-  background-color: #4CAF50;
-  color: #fff;
+  background-color: #333;
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #45a049;
+  background-color: #444;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-card {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .blog-card {
+    padding: 12px;
+    min-height: 360px;
+  }
+
+  .blog-image {
+    height: 200px;
+  }
+
+  .blog-title {
+    font-size: 16px;
+    min-height: auto;
+  }
+
+  .blog-description {
+    font-size: 13px;
+    margin-bottom: 15px;
+    max-height: 60px;
+  }
+
+  .read-more {
+    padding: 8px 16px;
+  }
+}
+
+/* Additional Enhancements */
+.blog-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #333, #666);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.blog-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Optimize Images Loading */
+.blog-image {
+  display: block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+}
+
+
   </style>          
         </div>
     </section>
     
 
-
+<!--Styling of Footer-->
     <style>
       body {
           margin: 0;
@@ -334,85 +447,99 @@ nav {
       }
 
       .footer {
-          background-color: #1C1C1C;
-          color: #ccc;
-          padding: 30px 20px;
-      }
+    background-color: #1C1C1C;
+    color: #ccc;
+    padding: 20px 15px; /* Reduced padding */
+}
 
-      .footer .columns {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-      }
+.footer .columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-      .footer-column {
-          flex: 1;
-          padding: 20px;
-          min-width: 200px;
-      }
+.footer-column {
+    flex: 1;
+    padding: 10px; /* Reduced padding */
+    min-width: 150px; /* Optional adjustment for smaller columns */
+}
 
-      .footer-column h3 {
-          color: #FFD700;
-          margin-bottom: 15px;
-      }
+.footer-column h3 {
+    color: #FFD700;
+    margin-bottom: 10px; /* Reduced margin */
+}
 
-      .footer-column a {
-          color: #ccc;
-          text-decoration: none;
-          display: block;
-          margin-bottom: 10px;
-      }
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px; /* Reduced margin */
+}
 
-      .footer-column a:hover {
-          color: #fff;
-      }
+.footer-column a:hover {
+    color: #fff;
+}
 
-      .footer .contact {
-          display: flex;
-          flex-direction: column;
-      }
+.footer .contact {
+    display: flex;
+    flex-direction: column;
+}
 
-      .contact input, .contact textarea {
-          width: 100%;
-          margin-bottom: 10px;
-          padding: 10px;
-          border: none;
-          border-radius: 5px;
-      }
+.contact input, .contact textarea {
+    width: 100%;
+    margin-bottom: 8px; /* Reduced margin */
+    padding: 8px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+}
 
-      .contact button {
-          padding: 10px;
-          background-color: #FFD700;
-          color: #000;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-      }
+.contact button {
+    padding: 8px; /* Reduced padding */
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-      .contact button:hover {
-          background-color: #FFC107;
-      }
+.contact button:hover {
+    background-color: #FFC107;
+}
 
-      .footer-bottom {
-          text-align: center;
-          margin-top: 20px;
-          color: #fff;
-      }
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px; /* Reduced margin */
+    color: #fff;
+    font-size: 14px; /* Optional smaller font size */
+}
 
- .social-icons {
-      display: flex;
-      gap: 20px; /* Space between icons */
-    }
+.social-icons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align icons vertically */
+    margin-top: 10px; /* Adjust margin as needed */
+    gap: 10px; /* Add equal spacing between icons */
+}
 
-    .social-icons a {
-      text-decoration: none; /* Remove underline */
-    }
+.social-icons a {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 40px; /* Set a fixed width for uniform size */
+    height: 40px; /* Set a fixed height for uniform size */
+    background-color: transparent; /* Optional: Add a background for visual effect */
+    border-radius: 50%; 
+    color: #ccc; 
+    font-size: 20px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+}
 
-    .social-icons img {
-      width: 50px; /* Adjust icon size */
-      height: 50px;
-      transition: transform 0.2s ease; /* Add hover effect */
-    }
+.social-icons a:hover {
+    background-color: #FFD700; 
+    color: #000; 
+}
+
   </style>
 </head>
 <body>
@@ -472,13 +599,7 @@ nav {
               <a href="#blog-section">Browse Testimonials</a>
               <a href="#">Browse Brands</a>
           </div>
-          <div class="footer-column contact">
-              <h3>Contact Us</h3>
-              <p>We will reach out as soon as possible :)</p>
-              <input type="text" placeholder="Email">
-              <textarea placeholder="Message"></textarea>
-              <button>SEND MESSAGE</button>
-          </div>
+         
       </div>
       
       <div class="footer-bottom">
