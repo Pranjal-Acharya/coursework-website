@@ -285,3 +285,106 @@ footer {
     }
 }
 
+/* Shop Page*/
+#page-header{
+    background-image:url(/guu.jpg);
+    width:100%;
+    height:86px;
+    background-size: cover;
+    display:flex;
+    padding: 14px;
+    color:#f4a261;
+    font-size: 28px;
+}
+
+#pagination{
+    text-align: center;
+}
+.containee {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+/* Heading Styles */
+.styled-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    margin: 0;
+  }
+  
+  .styled-heading::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #ffd700;
+    bottom: -10px;
+    left: 0;
+  }
+/* Results Section */
+.results-sort {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .results {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Sort Dropdown */
+  .sort-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sort-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sort-dropdown {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .sort-dropdown:focus {
+    border-color: #333;
+  }
+  
+  .sort-dropdown option {
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .results-sort {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+    
