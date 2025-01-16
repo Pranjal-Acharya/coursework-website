@@ -399,22 +399,20 @@ nav {
           color: #fff;
       }
 
-      .social-icons {
-          text-align: center;
-          margin-top: 20px;
-      }
+ .social-icons {
+      display: flex;
+      gap: 20px; /* Space between icons */
+    }
 
-      .social-icons a {
-          margin: 0 10px;
-          color: #ccc;
-          font-size: 20px;
-          text-decoration: none;
-      }
+    .social-icons a {
+      text-decoration: none; /* Remove underline */
+    }
 
-      .social-icons a:hover {
-          color: #FFD700;
-      }
-
+    .social-icons img {
+      width: 50px; /* Adjust icon size */
+      height: 50px;
+      transition: transform 0.2s ease; /* Add hover effect */
+    }
   </style>
 </head>
 <body>
