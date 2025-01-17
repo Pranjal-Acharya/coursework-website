@@ -491,6 +491,7 @@ footer {
   
   .produc:hover {
       transform: scale(1.05);
+    box-shadow:0px 0px 10px #db4646;
   }
   
   .produc-buttons {
@@ -509,7 +510,7 @@ footer {
   }
   
   .produc-buttons button {
-      background: white;
+      background: #ccc;
       border: none;
       width: 40px;
       height: 40px;
