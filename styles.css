@@ -300,14 +300,26 @@ footer {
 #pagination{
     text-align: center;
 }
+/* Make container a grid layout */
 .containee {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+/* Place heading in its own row spanning all columns */
+.containee h1 {
+    grid-column: 1 / -1;
+}
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .containee {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+}
 /* Heading Styles */
 .styled-heading {
     font-size: 24px;
