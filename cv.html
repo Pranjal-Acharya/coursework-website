@@ -2,61 +2,251 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
+    <title>About Us - Urban Watches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <table align="center", width="45%", border="1">
-        <tr>
-            <th>
-                <h1>My Name</h1>
-                <img src="Images/Screenshot (650).png" alt="Photo"><br>
-                Email:pranjalacharya7@gmail.com <br>
-                Phone No: 9806066848
-            </th>
-        </tr>
-        <td>
-            <table>
-                <h1>
-                    Skills
-                </h1>
-                <ul>
-                    <li>Programing Languages: Python, C++, Java</li>
-                    <li>Web development: Html, CSS, JavaScript</li>
-                    <li>Graphic designing: Adobe Photoshop, Canva</li>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><img src="images/urban soles. (6).png" alt=""></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <h1>Languages</h1>
-                <ul>
-                    <li>English</li>
-                    <li>Urdu</li>
-                    <li>Arabic</li>
-                </ul>
-                <h1>Education</h1>
-                <table border="1" align="center">
-                    <tr style="background-color:black; color:white">
-                        <th>Education</th>
-                        <th>Passing years</th>
-                        <th>Percentage</th>
-                    </tr>
-                    <tr>
-                        <td>Islington College</td>
-                        <td>2027</td>
-                        <td>TBD</td>
-                    </tr>
-                    <tr>
-                        <td>Kanchanjunga Namuna College</td>
-                        <td>2022</td>
-                        <td>80%</td>
-                    </tr>
-                </table>
-                <h1>Project</h1>
-                <ul>
-                    <li>This is a web development project in which design front end through HTML and CSS. <br> and backend through Django.</li>
-                    <li>This is a python based project.</li>
-                </ul>
-            </table>
-        </td>
-    </table>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>About Urban Watches</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/669a3a0e1d5ae3521c8aec5c_Lead Image  (4).jpg" alt="Luxury Watches Display" class="main-image">
+                </div>
+                
+                <div class="about-content">
+                    <h3>Your Premier Destination for Luxury Timepieces</h3>
+                    <p>Founded in 2024, Urban Watches has established itself as Nepal's leading curator of fine timepieces. From our boutique in Kamalpokhari, Kathmandu, we bring the world's most prestigious watch brands to discerning collectors and enthusiasts.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="feature-icon certificate"></i>
+                            <h4>Authentic Products</h4>
+                            <p>100% genuine timepieces with international warranty</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="feature-icon expertise"></i>
+                            <h4>Expert Consultation</h4>
+                            <p>Personalized guidance from certified horologists</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="feature-icon service"></i>
+                            <h4>After-Sales Service</h4>
+                            <p>Dedicated maintenance and repair support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developers Section -->
+<section class="developers" id="developers">
+    <div class="developers-container">
+        <div class="section-header">
+            <h2>Meet Our Developers</h2>
+            <div class="underline"></div>
+            <p class="section-description">The talented team behind Urban Watches' digital experience</p>
+        </div>
+
+        <div class="developer-cards">
+            <!-- Developer 1 - Full Stack Lead -->
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src="images/asal.jpg" alt="John Doe">
+                    <div class="social-overlay">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="developer-info">
+                    <h3>Asal Ale Magar</h3>
+                    <p class="role">Lead Developer</p>
+                    <p class="specialty">Full Stack Development</p>
+                    <div class="developer-skills">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="developer-actions">
+                        <a href="#" class="cv-button">Download CV</a>
+                        <button class="contact-button" data-email="john@urbanwatches.com">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer 2 - Frontend/UI -->
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src="images/uzwal.jpg" alt="Jane Smith">
+                    <div class="social-overlay">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="developer-info">
+                    <h3>Pranjal Acharya</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <p class="specialty">Frontend Development</p>
+                    <div class="developer-skills">
+                        <span>Figma</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="developer-actions">
+                        <a href="#" class="cv-button">Download CV</a>
+                        <button class="contact-button" data-email="jane@urbanwatches.com">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer 3 - Backend Expert -->
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src="images/samrat.jpg" alt="Mike Johnson">
+                    <div class="social-overlay">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                </div>
+                <div class="developer-info">
+                    <h3>Samrat Sharma</h3>
+                    <p class="role">Backend Developer</p>
+                    <p class="specialty">API & Database Architecture</p>
+                    <div class="developer-skills">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="developer-actions">
+                        <a href="#" class="cv-button">Download CV</a>
+                        <button class="contact-button" data-email="mike@urbanwatches.com">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer 4 - Mobile Developer -->
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src="images/aayushpandey.jpg" alt="Sarah Chen">
+                    <div class="social-overlay">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                <div class="developer-info">
+                    <h3>Aayush Pandey</h3>
+                    <p class="role">Mobile Developer</p>
+                    <p class="specialty">Cross-platform Development</p>
+                    <div class="developer-skills">
+                        <span>React Native</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="developer-actions">
+                        <a href="#" class="cv-button">Download CV</a>
+                        <button class="contact-button" data-email="sarah@urbanwatches.com">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer 5 - DevOps Engineer -->
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src="images/nayan.jpg" alt="Alex Rivera">
+                    <div class="social-overlay">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-docker"></i></a>
+                    </div>
+                </div>
+                <div class="developer-info">
+                    <h3>Nayan Chhantyal</h3>
+                    <p class="role">DevOps Engineer</p>
+                    <p class="specialty">Cloud & Infrastructure</p>
+                    <div class="developer-skills">
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>CI/CD</span>
+                    </div>
+                    <div class="developer-actions">
+                        <a href="#" class="cv-button">Download CV</a>
+                        <button class="contact-button" data-email="alex@urbanwatches.com">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="columns">
+            <div class="footer-column">
+                <h3>Urban Watches</h3>
+                <p>Your Time, Your Style and Your Watch.</p>
+                <p><b>Location:</b> Kamalpokhari,Kathmandu,Bagmati Nepal</p>
+                <p><b>Email:</b> yoururbanwatches@gmail.com</p>
+                <p><b>Phone:</b> 9806066848 || 9867063203</p>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/Untitled design.png" alt="Facebook Icon" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/Untitled design (1).png" alt="Facebook Icon" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <a href="#products">SALE!</a>
+                <a href="#products">Browse Watches</a>
+                <a href="#blog-section">Browse Testimonials</a>
+                <a href="#">Browse Brands</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            Urban Watches | All Rights Reserved 2025
+        </div>
+    </footer>
 </body>
 </html>
