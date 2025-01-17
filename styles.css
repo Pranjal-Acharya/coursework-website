@@ -169,7 +169,7 @@ nav {
 
 
 /* ===============================
-   Products Section
+   Products Section for main page
 ================================ */
 .products {
     padding: var(--spacing) calc(var(--spacing) * 2);
@@ -459,4 +459,95 @@ footer {
       align-items: flex-start;
     }
   }
-    
+
+  .productt {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 20px;
+      margin-left: auto;
+  }
+  
+  .produc {
+      position: relative;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+  }
+  
+  .produc-image {
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .produc-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+  }
+  
+  .produc:hover {
+      transform: scale(1.05);
+  }
+  
+  .produc-buttons {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+  
+  .produc:hover .produc-buttons {
+      opacity: 1;
+  }
+  
+  .produc-buttons button {
+      background: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+  }
+  
+  .produc-buttons button:hover {
+      background: #FFD700;
+  }
+  
+  .produc h3 {
+      margin: 15px 0 8px;
+      font-size: 1.1em;
+      color: #333;
+  }
+  
+  .produc-brand {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 8px;
+  }
+  
+  .produc-price {
+      font-weight: bold;
+      color: #000;
+      font-size: 1.2em;
+  }
+  
+  .discoun {
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+      font-size: 0.9em;
+  }
+  
+  
