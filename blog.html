@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Watches Blog</title>
     <style>
-        /* Hey! These are the main styles for the whole website.
-           Making everything look clean and nice with Arial font */
-        body {
-            font-family: Arial, sans-serif;
+        /* basic stuff */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #F2F2F2;
             color: #2C2C2C;
             font-size: 16px;
         }
 
-        /* This is for the top bar that stays at the top when you scroll
-           Added some cool blur effect to make it look fancy */
         header {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 16px 0;
             width: 100%;
+            position: fixed;
             z-index: 1000;
             backdrop-filter: blur(5px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: fixed;
         }
 
-        /* Making sure everything in the header stays in the middle
-           and looks organized */
         .header-container {
             position: relative;
             display: flex;
@@ -40,8 +39,6 @@
             height: 60px;
         }
 
-        /* This is for our logo - making it stick to the left side
-           and look just right */
         .logo {
             position: absolute;
             left: 0;
@@ -51,8 +48,6 @@
             z-index: 1001;
         }
 
-        /* Making the logo image a good size and moving it down a bit
-           so it looks better */
         .logo img {
             height: 150px;
             width: auto;
@@ -61,69 +56,132 @@
             top: 30px;
         }
 
-        /* Navigation menu links - making them line up nicely with
-           some space between them */
         .nav-links {
             display: flex;
             gap: 32px;
             list-style: none;
-            margin: 0;
-            padding: 0;
         }
 
-        /* Making the navigation links white and bold
-           Added a cool color change when you hover over them */
         .nav-links li a {
             text-decoration: none;
             color: #fff;
             font-size: 16px;
             font-weight: bold;
-            transition: color 0.3s ease;
+            transition: 0.3s;
         }
 
-        /* When you hover over a link, it changes to this orange color */
         .nav-links li a:hover {
             color: #f4a261;
         }
 
-        /* Blog post cards - making them look like nice white boxes
-           with a subtle shadow */
+        .hero {
+            position: relative;
+            height: 100%;
+            min-height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('images/18.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 40px;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 120px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                         0 0 20px rgba(255, 255, 255, 0.6),
+                         0 0 30px rgba(255, 255, 255, 0.4);
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            animation: glow 2s infinite alternate;
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                             0 0 20px rgba(255, 255, 255, 0.6),
+                             0 0 30px rgba(255, 255, 255, 0.4);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+                             0 0 30px rgba(255, 255, 255, 0.6),
+                             0 0 40px rgba(255, 255, 255, 0.4),
+                             0 0 50px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        .blog-container {
+            position: relative;
+            z-index: 2;
+            background-color: #F2F2F2;
+            padding-top: 60px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
         .blog-card {
             display: flex;
             background-color: #FFFFFF;
             border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;
-            transition: transform 0.3s ease;
+            margin-bottom: 40px;
         }
 
-        /* Making every second blog card flip its layout
-           (image on the other side) */
-        .blog-card:nth-child(even) {
-            flex-direction: row-reverse;
+        .blog-image {
+            width: 40%;
+            padding: 20px;
         }
 
-        /* Features section - making things line up in a row */
-        .features {
-            display: flex;
-            text-align: center;
+        .blog-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
         }
 
-        /* Each feature box gets equal space */
-        .feature {
-            flex: 1;
-            padding: 50px 20px;
-            color: #fff;
+        .blog-content {
+            width: 60%;
+            padding: 30px;
         }
 
-        /* Footer stuff - making it dark and organized */
+        .blog-content h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .blog-content p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 150%;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
         .footer {
             background-color: #1a1a1a;
-            color: #ffffff;
+            color: #fff;
             padding: 40px 20px 20px;
         }
 
-        /* Organizing footer content into columns */
         .footer .columns {
             max-width: 1200px;
             margin: 0 auto;
@@ -133,99 +191,86 @@
             gap: 40px;
         }
 
-        /* Each footer column gets its own space */
         .footer-column {
             flex: 1;
             min-width: 250px;
         }
 
-        /* Footer headings style */
         .footer-column h3 {
-            color: #ffffff;
+            color: #fff;
             font-size: 18px;
             margin-bottom: 20px;
         }
 
-        /* Footer text styling */
-        .footer-column p {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        /* Footer links styling */
+        .footer-column p, 
         .footer-column a {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
             margin-bottom: 10px;
             font-size: 14px;
+            color: #fff;
+            text-decoration: none;
         }
 
-        /* Making footer links show underline when you hover over them */
-        .footer-column a:hover {
-            text-decoration: underline;
-        }
-
-        /* Social media icons layout */
         .social-icons {
             display: flex;
             gap: 20px;
             margin-top: 20px;
         }
 
-        /* Making social icons a good size */
         .social-icons img {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.2s ease;
+            width: 50px;
+            height: 50px;
         }
 
-        /* Copyright section at the bottom of the footer */
         .footer-bottom {
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #333;
-            color: #ffffff;
-            font-size: 14px;
         }
 
-        /* Making everything look good on phones and tablets
-           (when the screen is smaller than 768px) */
         @media screen and (max-width: 768px) {
-            /* Stack blog cards vertically on small screens */
-            .blog-card {
-                flex-direction: column !important;
+            .hero h1 {
+                font-size: 72px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .hero {
+                height: 70%;
             }
 
-            /* Make images and content full width on small screens */
+            .blog-card {
+                flex-direction: column;
+            }
+
             .blog-image,
             .blog-content {
                 width: 100%;
             }
 
-            /* Stack features vertically */
-            .features {
-                flex-direction: column;
+            .blog-container {
+                width: 95%;
             }
 
-            /* Adjust navigation spacing */
-            .nav-links {
-                gap: 20px;
-            }
-
-            /* Make footer columns full width and centered */
             .footer-column {
                 flex: 100%;
                 text-align: center;
             }
-            
-            /* Center social icons */
+
             .social-icons {
                 justify-content: center;
             }
         }
+
+        @media screen and (max-width: 480px) {
+            .hero h1 {
+                font-size: 48px;
+            }
+        }
     </style>
+
 </head>
 <body>
     <!-- This is the top navigation bar that stays fixed -->
@@ -246,8 +291,8 @@
 
     <!-- Big title section at the top -->
     <section class="hero" style="text-align: center; padding: 120px 20px 20px; background-color: #f8f9fa;">
-        <h1 style="font-size: 100px; color: #333; margin-bottom: 15px;">BLOG</h1>
-        <p style="font-size: 20px; color: #666;">Where Time Meets Sophistication ⌚</p>
+        <h1 style="font-size: 100px; color: #ffffff; margin-bottom: 15px;">BLOG</h1>
+        <p style="font-size: 20px; color: #ffffff;">Where Time Meets Sophistication ⌚</p>
     </section>
 
     <!-- Section for all our blog posts -->
@@ -268,7 +313,7 @@
         <!-- Second blog post about luxury watches -->
         <div class="blog-card">
             <div class="blog-image" style="width: 40%; padding: 20px;">
-                <img src="images/13.jpg" alt="Luxury Watch Trends" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; transition: transform 0.3s ease;">
+                <img src="images/9783791379753.jpg" alt="Luxury Watch Trends" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; transition: transform 0.3s ease;">
             </div>
             <div class="blog-content" style="width: 60%; padding: 30px;">
                 <h2 style="font-size: 24px; margin-bottom: 15px; color: #333;">The Evolution of Luxury Timepieces: A Journey Through Time</h2>
@@ -281,7 +326,7 @@
         <!-- Third blog post about smart watches -->
         <div class="blog-card">
             <div class="blog-image" style="width: 40%; padding: 20px;">
-                <img src="images/17.jpg" alt="Watch Care Guide" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; transition: transform 0.3s ease;">
+                <img src="images/pngtree-smart-watches-floating-in-ramadan-themed-background-image_15596009.jpg" alt="Watch Care Guide" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px; transition: transform 0.3s ease;">
             </div>
             <div class="blog-content" style="width: 60%; padding: 30px;">
                 <h2 style="font-size: 24px; margin-bottom: 15px; color: #333;">Technological advancements with watch design and sales</h2>
